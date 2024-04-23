@@ -1,0 +1,25 @@
+/* <palette>
+  <color name="Café noir" hex="58402C" r="88" g="64" b="44" />
+  <color name="Eerie black" hex="27231B" r="39" g="35" b="27" />
+  <color name="Smoky black" hex="090502" r="9" g="5" b="2" />
+  <color name="Drab dark brown" hex="3D3728" r="61" g="55" b="40" />
+  <color name="Ecru" hex="C6A667" r="198" g="166" b="103" />
+</palette> */
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("../public/assets/bg-img.jpg");
+}
+
+.customers-wrapper {
+  padding: 50px;
+  color: white;
+  background-color: #0e1c36;
+}
+
+.customers-wrapper table {
+  background-color: #f9fbf2;
+  margin: 25px 0;
+  color: #0e1c36;
+}
