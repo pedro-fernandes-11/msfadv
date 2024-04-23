@@ -1,0 +1,38 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model customer {
+  id                String    @id @db.VarChar(255) @default(uuid())
+  name              String?   @db.VarChar(255)
+  nationality       String?   @db.VarChar(255)
+  maritalStatus     String?   @db.VarChar(255)
+  birthDate         DateTime? @db.DateTime(0)
+  profession        String?   @db.VarChar(255)
+  cpf               String?   @db.VarChar(30)
+  cnpj              String?   @db.VarChar(30)
+  rg                String?   @db.VarChar(30)
+  ctps              String?   @db.VarChar(30)
+  pis               String?   @db.VarChar(30)
+  number            String?   @db.VarChar(30)
+  number2           String?   @db.VarChar(30)
+  email             String?   @db.VarChar(255)
+  cep               String?   @db.VarChar(30)
+  street            String?   @db.VarChar(100)
+  residentialNumber Int?      @db.SmallInt
+  nhood             String?   @db.VarChar(30)
+  city              String?   @db.VarChar(30)
+  state             String?   @db.VarChar(30)
+  pix               String?   @db.VarChar(30)
+  bank              String?   @db.VarChar(30)
+  agency            String?   @db.VarChar(30)
+  accNumber         String?   @db.VarChar(30)
+  finance           String?   @db.Text
+  updatedOn         DateTime? @default(now())
+  createdOn         DateTime?  @default(now())
+}
